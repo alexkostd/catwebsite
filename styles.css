@@ -40,7 +40,10 @@ img{
 
 }
 
-
+article{
+display: block;
+unicode-bidi: isolate;
+}
 h1,h2,h3,h4{
     letter-spacing: var(--spacing);
     text-transform: capitalize;
@@ -93,10 +96,13 @@ p {
     color: var(--clr-secondary);
     background: var(--clr-secondary-light)
 }
-
+section{
+    display: block;
+    unicode-bidi: isolate;
+}
 .section-title h3{
     font-family: var(--ff-secondary) ;
-    color: var(--clr-primary-light);
+    color: var(--clr-secondary-dark);
 }
 .section-title{
     margin-bottom: 1.4rem;
@@ -122,8 +128,8 @@ header{
 }
 .header{
     min-height: 100vh ;
-    background: linear-gradient(rgba(45, 0, 0, 0.404), rgba(0, 0, 0, 0.466));
-    background:url(assets/stretchbanner.jpg) center/cover no-repeat fixed;
+    background: rgba(0, 0, 0,0.9);
+    background:url(assets/stretchbanner.jpg) center/cover no-repeat fixed ;
     text-align: center;
     position: relative;
     overflow-x: hidden;
@@ -170,10 +176,11 @@ transform: translate(-50%, -50%);
 
 .banner h1{
     font-family: var(--ff-primary);
-    color: var(--clr-secondary-dark);
+    color: var(--clr-primary);
 }
 .products{
-    text-align: center;
+    text-align:center;
+    margin-bottom: 1.6rem;
 }
 .inventory-btn{
 background-color: brown;
@@ -181,4 +188,14 @@ background-color: brown;
 .inventory-btn:hover{
 background-color: chocolate;
 color: aliceblue;
+}
+
+.product-img{
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+    height: 17rem;
+    object-fit: cover;
+}
+.services{
+    background-color: aliceblue;
 }
