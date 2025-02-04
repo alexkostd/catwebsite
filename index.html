@@ -3,17 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KittyShop</title>
+    <title>KittyShelter</title>
+    <!-- font awesome -->
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"/>
-
+<!-- css -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- navbar -->
+    <!-- nav button -->
+    <span class="nav-btn" id="nav-btn">
+        <i class="fas fa-bars"></i>
+    </span>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-header">
+            <span class="nav-close" id="nav-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <h4>site contents</h4>
+        <ul class="nav-items">
+            <li><a href="index.html" class="nav-link"></a></li>
+            <li><a href="skills.html" class="nav-link"></a></li>
+            <li><a href="about.html" class="nav-link"></a></li>
+            <li><a href="products.html" class="nav-link"></a></li>
+        </ul>
+    </nav>
+    <!-- end of navbar -->
     <header class="header">
     <div class="banner">
     <h1>MEET THE SHELTER KITTIES</h1>
@@ -26,6 +47,7 @@
 <div class="divider"></div>
 <!-- meet section -->
 <section class="skills clearfix">
+    
 <article class="skill">
     <span class="skill-icon">
         <i class="fa-solid fa-heart"></i> 
@@ -61,7 +83,7 @@
 
 </section>
 
-
+<!-- about section -->
 
 <section class="about-section">
 <div class="section-center clearfix">
@@ -84,6 +106,8 @@
 </article>
 </div>
 </section>
+<!-- end of about -->
+<!-- products -->
 <section class="products">
     <article class="products">
         <div class="products-title">
@@ -112,17 +136,29 @@
             <h4>will probably need bandages after</h4>
         </div>
     </article>
+    </section>
+    <!-- end of products -->
+    <!-- services -->
     <section class="services">
-        <div class="services-title">
+        <div class="services-title services-title">
             <h3>check out</h3>
             <h2>our services</h2>
 
         </div>
 <div class="section-center clearfix">
-    
+    <article class="service-card">
+        <div class="service-img-container">
+            <img src="" alt="single service" class="service-img">
+            <span class="service-icon"><i class="fa-solid fa-puzzle-piece"></i> </span>
+        </div>
+        <div class="service-info">
+            <h4>Lorem, ipsum.</h4>
+            <p></p>
+        </div>
+    </article>
 </div>
     </section>
-</section>
+
 </body>
 </html>
 
