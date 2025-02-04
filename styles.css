@@ -39,7 +39,10 @@ img{
     display: block;
 
 }
-
+header{
+    display: block;
+    unicode-bidi: isolate;
+}
 article{
 display: block;
 unicode-bidi: isolate;
@@ -84,21 +87,14 @@ p {
     box-shadow: 0 1px 3px rgba(0, 0, 0,0.3);
 
 }
-.banner-btn{
-    outline: 0.125rem solid  var(--clr-secondary-dark);
-    outline-offset: 0.25rem;
-    font-size: 1.25rem ;
-    padding: 1rem 1.75rem;
-    animation: show 5s ease-out 1;
-
-}
 .btn:hover{
     color: var(--clr-secondary);
     background: var(--clr-secondary-light)
 }
-section{
-    display: block;
-    unicode-bidi: isolate;
+.clearfix::after, .clearfix::before{
+    content: '';
+    clear: both;
+    display: table;
 }
 .section-title h3{
     font-family: var(--ff-secondary) ;
@@ -113,19 +109,15 @@ section{
     margin: 0 auto;
     max-width: 1170px;
 }
-.divider{
-    height: 0.5rem;
-    color: red;
-    background: linear-gradient( 90deg, 
-        var(#7b8cde) 0% 
-        var(#9999C3) 35%,
-        var(#BB999C)) 100%;  
 
-}
-header{
+/* section{
     display: block;
     unicode-bidi: isolate;
-}
+} */
+
+
+
+
 .header{
     min-height: 100vh ;
     background: rgba(0, 0, 0,0.9);
@@ -136,6 +128,48 @@ header{
 
 
 }
+.banner{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.banner h2{
+    font-family: var(--ff-secondary);
+    color: var(--clr-secondary-dark);
+    animation: slideFromRight 5s ease-in-out 1s;
+}
+
+
+.banner h1{
+    font-family: var(--ff-primary);
+    color: var(--clr-primary);
+}
+
+span{
+    color: var(--clr-primary);
+}
+.banner-btn{
+    outline: 0.125rem solid  var(--clr-secondary-dark);
+    outline-offset: 0.25rem;
+    font-size: 1.25rem ;
+    padding: 1rem 1.75rem;
+    animation: show 5s ease-out 1;
+
+
+
+}
+.divider{
+    height: 0.5rem;
+    color: red;
+    background: linear-gradient( 90deg, 
+        var(#7b8cde) 0% 
+        var(#9999C3) 35%,
+        var(#BB999C)) 100%;  
+
+}
+
 
 .skills{
     background: whitesmoke;
@@ -156,28 +190,29 @@ header{
     display: inline block;
     color: var(--clr-primary);
 }
-.skill-icon:hover{
-    color: rgb(243, 143, 11);
-    background: var(--clr-secondary-light)
-}
-.banner{
-    text-align: center;
-    position: absolute;
-    top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-.banner h2{
-    font-family: var(--ff-secondary);
-    color: var(--clr-secondary-dark);
-    animation: slideFromRight 5s ease-in-out 1s;
-}
 
 
-.banner h1{
-    font-family: var(--ff-primary);
-    color: var(--clr-primary);
+.skill-text{
+    max-width: 17rem;
+    margin: 0 auto;
 }
+.skill-title{
+color: var(--clr-primary);
+}
+.skill:hover {
+    background: var(--clr-primary);
+    box-shadow: 0 2px var(--clr-primary);
+    color: aliceblue;
+
+  }
+  .skill-title:hover{
+    color: aliceblue;
+  }
+  .skill:hover .skill-icon {
+   
+    transform: translateY(-5px);
+    color: var(--clr-secondary);
+  }
 .products{
     text-align:center;
     margin-bottom: 1.6rem;
