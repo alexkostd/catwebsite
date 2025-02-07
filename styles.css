@@ -146,10 +146,13 @@ box-shadow: 2px 0px 2px rgba(0, 0, 0,0.4);
 transition: var(--transition);
 transform: translateX(-100%);
 }
+.nav-btn i{
+    color: var(--clr-primary);
+}
 .nav-img{
     width: 50%;
     margin: 1.2rem auto;
-    border: 1px solid var(--clr-secondary);}
+    border: 1px solid var(--clr-primary);}
 
     .showNav{
         transform: translate(0);
@@ -201,12 +204,14 @@ transform: translate(-50%, -50%);
     font-family: var(--ff-secondary);
     color: var(--clr-secondary-dark);
     animation: slideFromRight 5s ease-in-out 1s;
+
 }
 
 
 .banner h1{
     font-family: var(--ff-primary);
     color: var(--clr-primary);
+    animation: slideFromLeft 5s ease-in-out 1s;
 }
 
 span{
@@ -262,19 +267,19 @@ span{
 color: var(--clr-primary);
 }
 .skill:hover {
-    background: var(--clr-primary);
+    background-color: var(--clr-primary);
     box-shadow: 0 2px var(--clr-primary);
     color: aliceblue;
 
 }
-.skill-title:hover{
+/* .skill-title:hover{
     color: aliceblue;
-}
-.skill:hover .skill-icon {
+} */
+/* .skill:hover .skill-icon {
 
     transform: translateY(-5px);
     color: var(--clr-secondary);
-}
+} */
 .products{
     text-align:center;
     margin-bottom: 1.6rem;
